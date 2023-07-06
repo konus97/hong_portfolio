@@ -235,7 +235,7 @@ $(window).resize(function(){
                   $(".project").css({margin:"0px"})
               })
              
-            },4000)
+            },3500)
           }
           
           
@@ -268,7 +268,7 @@ $(window).resize(function(){
             $(".pro_info").stop().animate({opacity:"0"})
           });
           
-          
+        if($(window).width() >= 1201) {
           $(" .link_page").on("mouseenter",function(){
             
             $(" .link_page").stop().css({background:"#939664"})
@@ -283,7 +283,9 @@ $(window).resize(function(){
           });
           
         
-        }
+          }
+        };
+
         
         
         ;
