@@ -222,7 +222,7 @@ $(function(){
 
 
 $(window).resize(function(){ 
-        if (window.innerWidth >=768) {   
+        if (window.innerWidth >=480) {   
           let end = $(".project li").length;
           let a = 0;
           let wid = 100;
