@@ -205,10 +205,10 @@ $(function(){
 
       /*post*/
       $(".post1 li,.post2 li").on("mouseenter",function(){
-        $(this).stop().animate({padding:"0px",height:"100%"})
+        $(this).stop().animate({padding:"0px"})
       });
       $(".post1 li,.post2 li").on("mouseleave",function(){
-        $(this).stop().animate({padding:"1%"})
+        $(this).stop().animate({padding:"0.2vw"})
       });
       
       
