@@ -94,28 +94,33 @@ $(function(){
 
 
    /*스킬 mouse*/
+
+  if($(window).width() >= 1201) {
+    $(".skill1 li").on("mouseenter",function(){
+      $(this).children("img").stop().css({display:"none"})
+      $(this).children("p").css({opacity:"1",display:"block"})
+      $(this).stop().animate({borderRadius:"50%"})
+    });
+    $(".skill1 li").on("mouseleave",function(){
+      $(this).children("img").stop().css({display:"block"})
+      $(this).children("p").css({display:"none"})
+      $(this).stop().animate({borderRadius:"15px"})
+    });
+    
+    $(".skill2 li").on("mouseenter",function(){
+      $(this).children("img").stop().css({display:"none"});
+      $(this).children("p").css({opacity:"1",display:"block"});
+      $(this).stop().animate({borderRadius:"50%"});
+    });
+    $(".skill2 li").on("mouseleave",function(){
+      $(this).children("img").stop().css({display:"block"});
+      $(this).children("p").css({display:"none"});
+      $(this).stop().animate({borderRadius:"15px"})
+    });
+  }
+    
    
-   $(".skill1 li").on("mouseenter",function(){
-    $(this).children("img").stop().css({display:"none"})
-    $(this).children("p").css({opacity:"1",display:"block"})
-    $(this).stop().animate({borderRadius:"50%"})
-   });
-   $(".skill1 li").on("mouseleave",function(){
-    $(this).children("img").stop().css({display:"block"})
-    $(this).children("p").css({display:"none"})
-    $(this).stop().animate({borderRadius:"15px"})
-   });
-   
-   $(".skill2 li").on("mouseenter",function(){
-    $(this).children("img").stop().css({display:"none"});
-    $(this).children("p").css({opacity:"1",display:"block"});
-    $(this).stop().animate({borderRadius:"50%"});
-   });
-   $(".skill2 li").on("mouseleave",function(){
-    $(this).children("img").stop().css({display:"block"});
-    $(this).children("p").css({display:"none"});
-    $(this).stop().animate({borderRadius:"15px"})
-   });
+  
   
 
 
